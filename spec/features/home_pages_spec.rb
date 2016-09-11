@@ -6,7 +6,7 @@ RSpec.feature "HomePages", type: :feature do
     it 'shows names of all authors of the web app' do
       visit '/about'
 
-      expect(page).to have_content 'Piotrek Ania Kuba Jędrek Beata'
+      expect(page).to have_content 'Piotrek Ania Kuba Jędrek Beata Karol'
     end
   end
 
