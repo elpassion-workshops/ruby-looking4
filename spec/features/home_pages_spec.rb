@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "HomePages", type: :feature, js: true do
+RSpec.feature "HomePages", type: :feature do
 
   describe 'about page' do
     it 'shows names of all authors of the web app' do
