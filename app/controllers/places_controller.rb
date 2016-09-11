@@ -2,7 +2,8 @@ class PlacesController < ApplicationController
   API_KEY = 'AIzaSyAP1vwxyCM--MERNqLnncKfDUsx9YfqvTQ'
 
   def index
-    @address = params[:address]
+    @popular_queries = Query.all
+    @address         = params[:address]
 
     if @address.present?
       coords  = Geocoder.coordinates(@address)

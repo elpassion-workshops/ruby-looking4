@@ -28,6 +28,15 @@
               </div>
               <%= submit_tag 'Search', class: 'btn btn-success' %>
           <% end %>
+
+          <hr />
+
+          <ol>
+            <% @popular_queries.each do |query| %>
+              <li><%= query.description %></li>
+            <% end %>
+          </ol>
+
         </div>
         <div class="col-md-9">
           <%= yield %>
