@@ -35,6 +35,9 @@ group :development, :test do
   gem 'byebug', platform: :mri
 
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
 end
 
 group :development do
